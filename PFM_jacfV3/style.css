@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: URL(img/jurasic.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.bienvenido {
+    color: rgb(93, 163, 255);
+}
+.login-box {
+    width: 80%; /* Ajuste para dispositivos pequeños */
+    max-width: 300px;
+    padding: 40px;
+    position: absolute;
+    background-color: black;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(26, 106, 234);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: rgb(128, 156, 199);
+    text-transform: uppercase;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    background: #f2f2f2;
+    border: none;
+    outline: none;
+    color: #333;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn {
+    width: 100%;
+    background:linear-gradient(to right,blue,rgb(0, 132, 255),rgb(0, 132, 255));
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 20px; /* Ajuste para dispositivos pequeños */
+    text-decoration: none;
+}
+
+.btn:hover {
+    background:linear-gradient(to right,blue,rgb(0, 132, 255));
+    box-shadow: 0 0 10px rgb(26, 192, 234);
+}
+
+@media screen and (max-width: 480px) { /* Media query para dispositivos pequeños */
+    .login-box {
+        width: 90%;
+    }
+}
